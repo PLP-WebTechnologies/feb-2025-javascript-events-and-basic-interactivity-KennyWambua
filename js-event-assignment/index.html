@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Event Assignment</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-magic"></i> Interactive Playground</h1>
+  </header>
+
+  <main>
+    <section class="button-section">
+      <button id="magicButton">
+        <i class="fas fa-wand-magic-sparkles"></i> Click Me!
+      </button>
+    </section>
+
+    <section class="gallery-section">
+      <div class="gallery">
+        <h2>Image Gallery</h2>
+        <img src="https://images.unsplash.com/photo-1746730341411-03b1f6b8f1f0?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D" id="galleryImage" alt="Gallery">
+        <button id="nextImage"><i class="fas fa-forward"></i> Next Image</button>
+      </div>
+    </section>
+
+    <section class="tabs-section">
+      <div class="tabs">
+        <h2>Interactive Tabs</h2>
+        <div class="tab-buttons">
+          <button class="tab-button active" data-tab="tab1">
+            <i class="fas fa-home"></i> Tab 1
+          </button>
+          <button class="tab-button" data-tab="tab2">
+            <i class="fas fa-star"></i> Tab 2
+          </button>
+        </div>
+        <div class="tab-content" id="tab1">
+          <i class="fas fa-hand-wave"></i> Welcome to Interactive Playground
+        </div>
+        <div class="tab-content hidden" id="tab2">
+          <i class="fas fa-heart"></i> Thank You for your time!
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <form id="signupForm">
+        <h2>Sign Up</h2>
+        <div class="form-group">
+          <label for="email">
+            <i class="fas fa-envelope"></i> Email:
+            <input type="email" id="email" required placeholder="Enter your email">
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="password">
+            <i class="fas fa-lock"></i> Password:
+            <input type="password" id="password" required placeholder="Enter your password">
+          </label>
+        </div>
+        <button type="submit">
+          <i class="fas fa-paper-plane"></i> Submit
+        </button>
+        <div id="formFeedback"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Interactive Playground. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
